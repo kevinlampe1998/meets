@@ -1,0 +1,180 @@
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  background: #222222;
+  padding: 10px;
+}
+
+#root {
+  height: 100%;
+}
+
+.persons-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.person {
+  height: 300px;
+  background: #444444;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+img,
+.replace {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.replace {
+  background: turquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.person-name {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.top-element {
+  background: #444444;
+  height: 40px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.top-element>span:first-child {
+  background: orange;
+  border-radius: 10px;
+}
+
+.top-element>* {
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.smiley-container {
+  background: #444444;
+  margin: 30px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+}
+
+.smiley-container>span {
+  padding: 5px;
+}
+
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.call-and-video {
+  background: #444444;
+  padding: 15px 0 15px 15px;
+  border-radius: 30px;
+}
+
+.bg-red {
+  background: lightcoral;
+  padding: 15px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.round-buttons {
+  padding: 15px;
+  background: #444444;
+  border-radius: 30px;
+  margin: 3px;
+}
+
+.phone-button {
+  background: lightcoral;
+  padding: 15px 25px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.bottom-buttons-right>* {
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.bottom-middle {
+  transform: translateY(40px);
+}
+
+.pd-right {
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .persons-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  img,
+  .replace {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .persons-container {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  img,
+  .replace {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .persons-container {
+    grid-template-columns: repeat(4, auto);
+  }
+}
