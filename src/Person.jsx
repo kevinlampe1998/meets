@@ -1,10 +1,10 @@
-export default function Person({ fname, lname, picture }) {
+export default function Person({ firstName, lastName, picture }) {
     return (
         <div className="person">
-            {picture ? <img src={picture} /> : <div className="replace">{fname.split("")[0]}</div>}
+            {picture ? <img src={picture} /> : <div className="replace">{firstName.split("")[0]}</div>}
             <div className="person-name">
-                <span>{fname}</span>
-                <span>{lname}</span>
+                <span>{firstName}</span>
+                <span>{lastName}</span>
             </div>
 
         </div>
