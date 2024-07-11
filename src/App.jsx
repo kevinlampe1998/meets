@@ -7,12 +7,30 @@ function App() {
   const [persons, setPersons] = useState(data);
   console.log(data);
 
+  const smileyFly = (event) => {
+    console.log(event.target.innerHTML);
+    const smiley = document.querySelector("#smiley-fly");
+    console.log(smiley);
+    smiley.innerHTML = event.target.innerHTML;
+    smiley.animate([
+      {
+        transform: "translateY(0px)"
+      },
+      {
+        transform: "translateY(-500px)"
+      }
+    ], {
+      duration: 2000
+    });
+    setTimeout(() => smiley.innerHTML = "", 2000);
+  };
+
   return (
     <main>
       <div className="top-element">
         <span>&#128193;</span>
         <span>
-          <span className="pd-right">&#x25A6;</span>
+          <span className="pd-right-10">&#x25A6;</span>
           <span>Breakout rooms are in session</span>
         </span>
       </div>
@@ -22,15 +40,15 @@ function App() {
         ))}
       </div>
       <div className="smiley-container">
-        <span>💖</span>
-        <span>&#128077;</span>
-        <span>&#127881;</span>
-        <span>&#128079;</span>
-        <span>😂</span>
-        <span>&#128558;</span>
-        <span>&#128546;</span>
-        <span>🤔</span>
-        <span>&#128078;</span>
+        <span onClick={smileyFly} >💖</span>
+        <span onClick={smileyFly} >&#128077;</span>
+        <span onClick={smileyFly} >&#127881;</span>
+        <span onClick={smileyFly} >&#128079;</span>
+        <span onClick={smileyFly} >😂</span>
+        <span onClick={smileyFly} >&#128558;</span>
+        <span onClick={smileyFly} >&#128546;</span>
+        <span onClick={smileyFly} >🤔</span>
+        <span onClick={smileyFly} >&#128078;</span>
       </div>
       <span className="bottom-middle">
         <span className="call-and-video">
@@ -61,6 +79,8 @@ function App() {
         </span>
       </div>
 
+      <div id="smiley-fly"></div>
+      <div className="bg-dark"></div>
     </main >
   )
 }
