@@ -18,7 +18,7 @@ function App() {
       </div>
       <div className="persons-container">
         {persons.map((e, i) => (
-          <Person key={i} fname={e.fname} lname={e.lname} picture={e.picture} />
+          <Person key={i} firstName={e.firstName} lastName={e.lastName} picture={e.picture} />
         ))}
       </div>
       <div className="smiley-container">

@@ -4,43 +4,43 @@ import person3 from "../pictures/person3.png";
 
 export default [
     {
-      fname: "Manuel",
-      lname: "Fahrenholz",
+      firstName: "Manuel",
+      lastName: "Fahrenholz",
       picture: person1
     },
     {
-        fname: "K",
-        lname: "Gnd",
+        firstName: "K",
+        lastName: "Gnd",
         picture: null
     },
     {
-        fname: "Paul",
-        lname: "Schilling",
+        firstName: "Paul",
+        lastName: "Schilling",
         picture: null
     },
     {
-        fname: "Philipp",
-        lname: "Sauerlaender",
+        firstName: "Philipp",
+        lastName: "Sauerlaender",
         picture: null
     },
     {
-        fname: "Ralf",
-        lname: "Schmiltz",
+        firstName: "Ralf",
+        lastName: "Schmiltz",
         picture: person2
     },
     {
-        fname: "Julijana",
-        lname: "Uneva",
+        firstName: "Julijana",
+        lastName: "Uneva",
         picture: null
     },
     {
-        fname: "Kevin Thomas",
-        lname: "Lampe",
+        firstName: "Kevin Thomas",
+        lastName: "Lampe",
         picture: null
     },
     {
-        fname: "Oscar",
-        lname: "van Velsen",
+        firstName: "Oscar",
+        lastName: "van Velsen",
         picture: person3
     },
   ]
